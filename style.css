@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.form-control.rounded-search {
+    border-radius: 20px;
+    padding-left: 35px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none"><g clip-path="url(%23clip0_1_2169)"><path d="M16.4493 14.4127L12.0966 10.0601C14.0681 7.46854 13.6944 3.79267 11.2418 1.65084C8.7893 -0.490982 5.09659 -0.366244 2.79414 1.93621C0.491689 4.23866 0.366951 7.93134 2.50878 10.3839C4.6506 12.8365 8.32644 13.2101 10.918 11.2387L15.2706 15.5914C15.5985 15.9111 16.1215 15.9111 16.4493 15.5914C16.7745 15.2658 16.7745 14.7383 16.4493 14.4127ZM2.69332 6.33338C2.69332 3.8481 4.70804 1.83338 7.19332 1.83338C9.67857 1.83338 11.6933 3.8481 11.6933 6.33338C11.6933 8.81867 9.67857 10.8334 7.19332 10.8334C4.70926 10.8305 2.69626 8.81747 2.69332 6.33338Z" fill="%23202125"/></g><defs><clipPath id="clip0_1_2169"><rect width="16" height="16" fill="white" transform="translate(0.85997)"/></clipPath></defs></svg>');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: #2021251F;
+}
+
+.btn-custom {
+    background-color: #009DE014 !important;
+    color: #009DE0 !important;
+    
+  }
+
+  .navbar-toggler-icon {
+    background-color: #009DE0; /* Изменить цвет иконки */
+  }
+  
+.nav-link.active {
+    color: black;
+}
+
+.location {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+.location::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #009DE014;
+    z-index: -1; 
+}
+  
+.navbar {
+    border: 1px solid #ccc; 
+    padding: 3%;
+  }
+  
+.cart {
+    margin-right: 5%;
+    margin-bottom: 0.5%;
+ } 
+  
+.cart svg {
+    width: 150%;
+    height: 150%;
+    color: #009DE0;
+}
+
+.fields {    
+    text-align: center;  
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-restaurants {
+    background-color: #009DE0 !important;
+    border-radius: 20px !important;
+    color: white !important;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    margin-right: 2%;
+}
+
+.btn svg {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 75em;
+}
+.wrapper > .inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.card > img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 17.5em;
+}
+.card > .content {
+  background: #fafafb;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1em;
+  text-align: center;
+}
+.card > .content > h1, .card > .content > h3 {
+  margin: 0.35em 0;
+}
+.card > .content > h1 {
+  color: #1e1a1a;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.card > .content > h3 {
+  color: #929191;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.map {
+  margin-top: 1em;
+}
+.map > button {
+  all: unset;
+  background: #009DE0;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+.map > button.active:after {
+  background: #009DE0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.restaurants {
+    margin-top: 12%;
+    text-align: center;  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.card-text {
+    font-size: 16px; /* Размер текста */
+    color: #818181; /* Цвет текста */
+    /* Другие стили, такие как шрифт, выравнивание, отступы и т. д. */
+  }
+  
+.card-img-top {
+     width: 100% !important;
+}
+
+.footer {
+    border-top: 1px dashed rgba(32, 33, 37, 0.12);
+}
+.footer p{
+    color: #009DE0;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+}
+  
+.card.p svg{
+    margin-bottom: 50px;
+}
+
+.last img {
+    width: 98%;
+    height: auto;
+}
+
+.last {
+    margin-top: 5%;
+}
+
+a {
+    text-decoration: none !important;
+  }
+
+  .welcome {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 110%;
+    display: block;
+  }
+  
+  .image-container h2, h6 {
+    position: absolute;
+    bottom: 10px; 
+    margin-bottom: 30px;
+    left: 20px; /* Или любых других значений */
+    color: white; /* Цвет текста заголовка */
+    z-index: 2; /* Устанавливаем поверх изображения */
+  }
+  
+.container {
+  margin-top: 10%;
+}
+
+/* Пример стилей для отступов в корзине */
+.basket li {
+  margin-bottom: 10px; /* Добавляет отступ между элементами корзины */
+}
+
+.total-price {
+  margin-top: 20px; /* Отступ над общей стоимостью */
+}
